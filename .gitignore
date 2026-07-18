@@ -1,0 +1,31 @@
+# Dependencies & build
+**/node_modules/
+**/dist/
+**/dist-ssr/
+*.local
+
+# Heavy local analysis / mirrors (not part of the demo app)
+tmp-sinahotels/
+reference-houseofhoney/
+source-analysis/
+
+# Logs & OS
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env / secrets
+.env
+.env.*
+!.env.example

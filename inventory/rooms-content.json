@@ -1,0 +1,345 @@
+[
+  {
+    "title": "Camere Classic",
+    "specs": {
+      "sqm": 32,
+      "sqf": 344,
+      "max_guests": 2
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Classic accolgono l’ospite in ambienti intimi e funzionali, con arredi eleganti, pavimenti in parquet e tonalità calde. I bagni, in stile classico con doppio lavabo, dispongono di doccia e vasca."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Camere Superior hotel Sina Villa Matilde",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Superior",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Classic"
+    ],
+    "slug": "classic",
+    "label": "Classic",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/classic.html"
+  },
+  {
+    "title": "Camere Superior",
+    "specs": {
+      "sqm": 25,
+      "sqf": 236,
+      "max_guests": 2
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Superior offrono ambienti accoglienti e curati, con pavimenti in parquet. I bagni, in stile classico con doppio lavabo, dispongono di tutti i comfort. Alcune camere dispongono della possibilità di essere comunicanti, offrendo maggiore flessibilità di soggiorno."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Camere Superior hotel Sina Villa Matilde",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Deluxe",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Superior"
+    ],
+    "slug": "superior",
+    "label": "Superior",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/superior.html"
+  },
+  {
+    "title": "Camere Deluxe",
+    "specs": {
+      "sqm": 32,
+      "sqf": 344,
+      "max_guests": 3
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Deluxe sono caratterizzate da ambienti ampi, luminosi e curati nei dettagli che valorizzano il carattere della Villa. Situate negli spazi storici, alcune camere offrono la possibilità di essere comunicanti in maniera da offrire maggiore flessibilità di soggiorno. I bagni, in stile classico con doppio lavabo, dispongono di tutti i comfort."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "villamatilde superior",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Premium Deluxe",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Deluxe"
+    ],
+    "slug": "deluxe",
+    "label": "Deluxe",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/deluxe.html"
+  },
+  {
+    "title": "Camere Premium Deluxe",
+    "specs": {
+      "sqm": 42,
+      "sqf": 452,
+      "max_guests": 2
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Premium Deluxe sono situate nel corpo storico centrale della Villa. I dettagli d’epoca e le finiture delicate contribuiscono a creare un’atmosfera intima e raffinata. I bagni, in stile classico con doppio lavabo, sono decorati in graniglia colorata."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde Premium Deluxe (1)",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Premium Deluxe with Balcony",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Premium Deluxe"
+    ],
+    "slug": "premium-deluxe",
+    "label": "Premium Deluxe",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe.html"
+  },
+  {
+    "title": "Camere Premium Deluxe with Balcony",
+    "specs": {
+      "sqm": 42,
+      "sqf": 452,
+      "max_guests": 2
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Premium Deluxe with Balcony, arredate con richiami d’epoca e finiture curate, offrono un ambiente confortevole e rilassante. Situate nel corpo storico centrale della Villa, dispongono di balcone con affaccio sull'ampio parco secolare che circonda la Villa. I bagni, in stile classico con doppio lavabo, dispongono di tutti i comfort."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde Premium Deluxe Balcony (2)",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Premium Deluxe with Terrace",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Premium Deluxe with Balcony"
+    ],
+    "slug": "premium-deluxe-balcony",
+    "label": "Premium Deluxe with Balcony",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe-with-balcony.html"
+  },
+  {
+    "title": "Camere Premium Deluxe with Terrace",
+    "specs": {
+      "sqm": 42,
+      "sqf": 452,
+      "max_guests": 2
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - TV satellitare - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Camere Premium Deluxe with Terrace sono situate nel corpo storico centrale. Gli ambienti, con tocchi d’epoca e finiture raffinate, si aprono su un terrazzo privato con vista sul parco secolare che avvolge la Villa. I bagni, in stile classico con doppio lavabo, dispongono di tutti i comfort."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde Premium Deluxe Terrace (2)",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Family Junior Suite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Premium Deluxe with Terrace"
+    ],
+    "slug": "premium-deluxe-terrace",
+    "label": "Premium Deluxe with Terrace",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe-with-terrace.html"
+  },
+  {
+    "title": "Family Junior Suite",
+    "specs": {
+      "sqm": 52,
+      "sqf": 559,
+      "max_guests": 5
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - Canali TV satellitari - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Family Junior Suite sono ampie ed accoglienti, pensate per offrire il massimo comfort durante i soggiorni in famiglia. I pavimenti in parquet e l’armoniosa combinazione di elementi d’epoca, tessuti pregiati e decorazioni eleganti creano un’atmosfera calda e raffinata, che richiama il fascino storico della Villa. Gli spazi generosi sono ideali per condividere momenti di relax in un contesto esclusivo. I bagni, in stile classico con doppio lavabo, sono impreziositi da finiture in marmo di alta qualità e dispongono di vasca e doccia."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "villamatilde juniorsuite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Two Floor Suite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Family Junior Suite"
+    ],
+    "slug": "family-junior-suite",
+    "label": "Family Junior Suite",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/family-junior-suite.html"
+  },
+  {
+    "title": "Two Floor Suite",
+    "specs": {
+      "sqm": 52,
+      "sqf": 559,
+      "max_guests": 4
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - Canali TV satellitari - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Two Floor Suite, adiacenti alla zona piscina, offrono spazi ampi e versatili, con pavimenti in parquet. Al piano inferiore vi è un comodo salotto con possibilità di divano letto, mentre il soppalco ospita la zona notte con letto matrimoniale. I bagni, in stile classico con doppio lavabo, sono arricchiti da eleganti finiture in marmo."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde bilevel family suite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Park View Heritage Suite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Two Floor Suite"
+    ],
+    "slug": "two-floor-suite",
+    "label": "Two Floor Suite",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/two-floor-suite.html"
+  },
+  {
+    "title": "Park View Heritage Suite with Balcony",
+    "specs": {
+      "sqm": 52,
+      "sqf": 559,
+      "max_guests": 3
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - Canali TV satellitari - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Park View Heritage Suite with Balcony, situate al piano nobile della Villa, conservano il fascino delle residenze storiche un tempo dedicate gli ospiti aristocratici. Gli interni sono caratterizzati da dettagli raffinati, colori delicati e pavimenti originali. L’atmosfera elegante e accogliente è completata da ampie finestre e balcone con affaccio sul parco secolare alberato che circonda la Villa. I bagni, in stile classico con doppio lavabo, dispongono di tutti i comfort."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde Park View Heritage Suite Balcony (2)",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [],
+    "slug": "park-view-heritage-balcony",
+    "label": "Park View Heritage Suite with Balcony",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/park-view-heritage-suite-with-balcony.html"
+  },
+  {
+    "title": "Park View Heritage Suite",
+    "specs": {
+      "sqm": 52,
+      "sqf": 559,
+      "max_guests": 3
+    },
+    "services": "Climatizzazione regolabile - Linea telefonica - Canali TV satellitari - Wi-Fi - Cassaforte - Minibar - Linea cortesia - Charging station per auto elettriche/ibride - Parcheggio scoperto - Parcheggio coperto Premium - Animali ammessi",
+    "descriptions": [
+      "Le Park View Heritage Suites, situate al piano nobile della Villa, conservano il fascino delle residenze storiche un tempo dedicate gli ospiti aristocratici. Gli ambienti sono luminosi e riservati, arricchiti da ampie finestre con affacciato sui giardini, pavimenti originali e dettagli raffinati. I bagni, in stile classico con doppio lavabo, dispongono di vasca e doccia."
+    ],
+    "images": [
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=1280",
+        "alt": "Sina Villa Matilde Park view suite",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=1280"
+      },
+      {
+        "asset_path": "https://www.sinahotels.com/cdn-cgi/image/width=555",
+        "alt": "Park View Heritage Suite with Balcony",
+        "url": "https://www.sinahotels.com/cdn-cgi/image/width=555"
+      },
+      {
+        "asset_path": "small-luxury-hotels-logo-png_seeklogo-324079.png",
+        "alt": "Small Luxury Hotels",
+        "url": "https://www.sinahotels.com/assets/uploads/small-luxury-hotels-logo-png_seeklogo-324079.png"
+      }
+    ],
+    "related_rooms": [
+      "Park View Heritage Suite"
+    ],
+    "slug": "park-view-heritage-suite",
+    "label": "Park View Heritage Suite",
+    "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/suite-torino.html"
+  }
+]

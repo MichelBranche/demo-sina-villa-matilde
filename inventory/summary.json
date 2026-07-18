@@ -1,0 +1,261 @@
+{
+  "total_pages": 28,
+  "successful_pages": 28,
+  "failed_pages": 0,
+  "unique_images": 147,
+  "unique_videos": 1,
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/",
+      "title": "Hotel con Piscina in Piemonte, vicino Torino | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 17,
+      "paragraphs_count": 27,
+      "images_count": 41
+    },
+    {
+      "slug": "camere-e-suite",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/",
+      "title": "Hotel lusso Torino | Camere e suite Torino | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 13,
+      "paragraphs_count": 13,
+      "images_count": 13
+    },
+    {
+      "slug": "classic",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/classic.html",
+      "title": "Dimora storica Piemonte | Camere Classic | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 15,
+      "images_count": 7
+    },
+    {
+      "slug": "superior",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/superior.html",
+      "title": "Dimora storica Piemonte | Camere Superior | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 15,
+      "images_count": 7
+    },
+    {
+      "slug": "deluxe",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/deluxe.html",
+      "title": "Dimora di charme Piemonte | Camere Deluxe | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 7
+    },
+    {
+      "slug": "premium-deluxe",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe.html",
+      "title": "Dimora di charme Piemonte | Camere Premium Deluxe | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 9
+    },
+    {
+      "slug": "premium-deluxe-balcony",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe-with-balcony.html",
+      "title": "Dimora di charme Piemonte | Camere Premium Deluxe con Balcone | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 7
+    },
+    {
+      "slug": "premium-deluxe-terrace",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/premium-deluxe-with-terrace.html",
+      "title": "Dimora di charme Piemonte | Camere Premium Deluxe con Balcone | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 7
+    },
+    {
+      "slug": "family-junior-suite",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/family-junior-suite.html",
+      "title": "Hotel di charme Torino | Family Junior Suite | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 7
+    },
+    {
+      "slug": "two-floor-suite",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/two-floor-suite.html",
+      "title": "Two-Floor Suite  | Sina Villa Matilde Torino | Sito ufficiale",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 8
+    },
+    {
+      "slug": "park-view-heritage-balcony",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/park-view-heritage-suite-with-balcony.html",
+      "title": "Suite Torino | Sina Villa Matilde | Sito ufficiale",
+      "status": 200,
+      "headings_count": 3,
+      "paragraphs_count": 14,
+      "images_count": 5
+    },
+    {
+      "slug": "park-view-heritage-suite",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/camere-e-suite/suite-torino.html",
+      "title": "Suite Torino | Sina Villa Matilde | Sito ufficiale",
+      "status": 200,
+      "headings_count": 5,
+      "paragraphs_count": 16,
+      "images_count": 9
+    },
+    {
+      "slug": "dining",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/ristorante-le-scuderie.html",
+      "title": "Le Scuderie ristorante Romano Canavese | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 15,
+      "images_count": 10
+    },
+    {
+      "slug": "location",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/location.html",
+      "title": "Romano Canavese Hotel con ristorante, Torino, Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 5
+    },
+    {
+      "slug": "romano-canavese",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/location/romano-canavese.html",
+      "title": "Romano Canavese, Ivrea, provincia di Torino | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 18,
+      "images_count": 11
+    },
+    {
+      "slug": "offerte",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/offerte-hotel-torino/",
+      "title": "Offerte hotel Torino | Week end Piemonte | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 6,
+      "paragraphs_count": 16,
+      "images_count": 7
+    },
+    {
+      "slug": "gallery",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/gallery.html",
+      "title": "Gallery | Sina Villa Matilde Torino | Sito ufficiale",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 12,
+      "images_count": 41
+    },
+    {
+      "slug": "benessere",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/hotel-con-spa-piemonte.html",
+      "title": "Hotel con spa e piscina Torino, Piemonte",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 15,
+      "images_count": 7
+    },
+    {
+      "slug": "meeting-eventi",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/meeting-e-eventi/",
+      "title": "Location per Sale Meeting Torino | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 7,
+      "paragraphs_count": 13,
+      "images_count": 8
+    },
+    {
+      "slug": "il-parco",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/meeting-e-eventi/il-parco.html",
+      "title": "Hotel con giardino per eventi in Piemonte | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 13,
+      "images_count": 12
+    },
+    {
+      "slug": "sala-arduino",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/meeting-e-eventi/sala-riunioni-arduino.html",
+      "title": "Sala riunioni Torino | Sala Arduino | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 13,
+      "images_count": 10
+    },
+    {
+      "slug": "sala-biblioteca",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/meeting-e-eventi/biblioteca.html",
+      "title": "Location eventi esclusivi Torino | Sala Biblioteca | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 12,
+      "images_count": 10
+    },
+    {
+      "slug": "salone-reale",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/meeting-e-eventi/salone-reale.html",
+      "title": "Sala congressi Torino | Salone Reale | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 12,
+      "images_count": 10
+    },
+    {
+      "slug": "matrimoni",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/location-matrimoni-piemonte/",
+      "title": "Location per Matrimoni e Ricevimenti vicino Torino, Villa Matilde",
+      "status": 200,
+      "headings_count": 3,
+      "paragraphs_count": 16,
+      "images_count": 11
+    },
+    {
+      "slug": "storia",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/residenza-d-epoca-piemonte.html",
+      "title": "Residenza d’epoca Piemonte | Storia | Sina Villa Matilde",
+      "status": 200,
+      "headings_count": 2,
+      "paragraphs_count": 12,
+      "images_count": 6
+    },
+    {
+      "slug": "esperienze-canavese",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/esperienze-canavese.html",
+      "title": "Esperienze nel Canavese | Gruppo Sina Hotels | Sito ufficiale",
+      "status": 200,
+      "headings_count": 2,
+      "paragraphs_count": 14,
+      "images_count": 10
+    },
+    {
+      "slug": "vivere-vma",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/vivere-sina-villa-matilde.html",
+      "title": "Esperienze uniche da vivere in Villa!",
+      "status": 200,
+      "headings_count": 2,
+      "paragraphs_count": 19,
+      "images_count": 24
+    },
+    {
+      "slug": "sostenibilita",
+      "url": "https://www.sinahotels.com/it/h/sina-villa-matilde-torino/sostenibilit%C3%A0.html",
+      "title": "Sostenibilità Ambientale | Hotel 4 Stelle Piemonte | Villa Matilde",
+      "status": 200,
+      "headings_count": 1,
+      "paragraphs_count": 12,
+      "images_count": 4
+    }
+  ]
+}
