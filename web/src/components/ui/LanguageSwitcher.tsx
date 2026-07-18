@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type ReactElement } from "react";
 import gsap from "gsap";
 import { LOCALE_META, LOCALES, useLocale, type Locale } from "../../i18n/locale";
-import { EASE } from "../../lib/motion";
+import { EASE, useMagnetic } from "../../lib/motion";
+import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 
 type LanguageSwitcherProps = {
   toneClass: string;
@@ -104,9 +105,14 @@ export function LanguageSwitcher({
   const { locale, setLocale, t } = useLocale();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const magnetRef = useRef<HTMLDivElement>(null);
   const popRef = useRef<HTMLDivElement>(null);
   const ActiveFlag = FLAGS[locale];
   const onDark = variant === "onDark";
+  const reducedMotion = usePrefersReducedMotion();
+
+  // Same hook as Contattaci — on a wrapper, no CSS transform transition fighting GSAP
+  useMagnetic(magnetRef, { strength: 10, disabled: reducedMotion || open });
 
   useEffect(() => {
     if (!open) return;
@@ -125,55 +131,75 @@ export function LanguageSwitcher({
   }, [open]);
 
   useEffect(() => {
-    const pop = popRef.current;
-    if (!open || !pop) return;
+    if (!open) return;
 
-    const origin = placement === "top" ? "90% 100%" : "90% 0%";
+    // Wait a frame so the freshly mounted popup has layout + ref
+    const id = requestAnimationFrame(() => {
+      const pop = popRef.current;
+      if (!pop) return;
 
-    gsap.fromTo(
-      pop,
-      { opacity: 0, y: placement === "top" ? 8 : -8, scale: 0.86, filter: "blur(6px)" },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        filter: "blur(0px)",
-        duration: 0.42,
-        ease: EASE.villaOut,
-        transformOrigin: origin,
-      },
-    );
+      gsap.set(magnetRef.current, { x: 0, y: 0 });
 
-    gsap.fromTo(
-      pop.querySelectorAll("[data-lang-option]"),
-      { opacity: 0, y: placement === "top" ? -8 : 8, scale: 0.9 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 0.32,
-        stagger: 0.04,
-        delay: 0.06,
-        ease: EASE.villaOut,
-      },
-    );
+      const fromTop = placement === "top";
+      const origin = fromTop ? "85% 100%" : "85% 0%";
+
+      gsap.fromTo(
+        pop,
+        {
+          opacity: 0,
+          y: fromTop ? 14 : -14,
+          scale: 0.72,
+          filter: "blur(10px)",
+          rotate: fromTop ? 1.5 : -1.5,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          filter: "blur(0px)",
+          rotate: 0,
+          duration: 0.55,
+          ease: EASE.villaOut,
+          transformOrigin: origin,
+          clearProps: "filter,rotate",
+        },
+      );
+
+      gsap.fromTo(
+        pop.querySelectorAll("[data-lang-option]"),
+        { opacity: 0, y: fromTop ? -10 : 10, scale: 0.92 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.38,
+          stagger: 0.05,
+          delay: 0.1,
+          ease: EASE.villaOut,
+        },
+      );
+    });
+
+    return () => cancelAnimationFrame(id);
   }, [open, placement]);
 
   return (
     <div ref={rootRef} className={`relative ${className}`}>
-      <button
-        type="button"
-        className={`nav-intro ${toneClass} relative h-10 w-14 shrink-0 overflow-hidden rounded-full border-2 border-current transition-[border-color,transform] duration-500`}
-        aria-label={t.nav.language}
-        aria-expanded={open}
-        aria-haspopup="listbox"
-        onClick={() => setOpen((v) => !v)}
-      >
-        <span className="absolute inset-0">
-          <ActiveFlag />
-        </span>
-        <span className="sr-only">{LOCALE_META[locale].label}</span>
-      </button>
+      <div ref={magnetRef} className="inline-flex will-change-transform">
+        <button
+          type="button"
+          className={`nav-intro ${toneClass} relative h-10 w-14 shrink-0 overflow-hidden rounded-full border-2 border-current transition-[border-color] duration-500`}
+          aria-label={t.nav.language}
+          aria-expanded={open}
+          aria-haspopup="listbox"
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className="absolute inset-0">
+            <ActiveFlag />
+          </span>
+          <span className="sr-only">{LOCALE_META[locale].label}</span>
+        </button>
+      </div>
 
       {open && (
         <div
@@ -186,22 +212,31 @@ export function LanguageSwitcher({
               : "top-[calc(100%+0.75rem)]"
           }`}
         >
+          {/* Vignette speech bubble */}
           <div
-            className={`relative max-h-[min(50vh,22rem)] overflow-y-auto rounded-[1.35rem] px-3 py-3 shadow-[0_20px_50px_rgba(51,25,23,0.18)] [scrollbar-width:thin] ${
+            className={`relative overflow-hidden rounded-[1.35rem] px-3 py-3 shadow-[0_20px_50px_rgba(51,25,23,0.18)] ${
               onDark
-                ? "border-2 border-blush/25 bg-cream"
+                ? "border-2 border-blush/30 bg-cream"
                 : "border-2 border-dark/15 bg-cream"
             }`}
           >
+            <span
+              aria-hidden
+              className={`pointer-events-none absolute inset-0 rounded-[1.3rem] ${
+                onDark
+                  ? "shadow-[inset_0_0_48px_rgba(51,25,23,0.14)]"
+                  : "shadow-[inset_0_0_48px_rgba(51,25,23,0.1)]"
+              }`}
+            />
             <span
               aria-hidden
               className={`absolute right-5 size-3.5 rotate-45 bg-cream ${
                 placement === "top"
                   ? "-bottom-2 border-b-2 border-r-2"
                   : "-top-2 border-l-2 border-t-2"
-              } ${onDark ? "border-blush/25" : "border-dark/15"}`}
+              } ${onDark ? "border-blush/30" : "border-dark/15"}`}
             />
-            <ul className="relative flex flex-col gap-1.5">
+            <ul className="relative flex max-h-[min(50vh,22rem)] flex-col gap-1.5 overflow-y-auto [scrollbar-width:thin]">
               {LOCALES.map((code) => {
                 const selected = code === locale;
                 const Flag = FLAGS[code];
@@ -218,7 +253,7 @@ export function LanguageSwitcher({
                         setOpen(false);
                       }}
                     >
-                      <span className="relative h-9 w-12 shrink-0 overflow-hidden rounded-full border-2 border-dark/20">
+                      <span className="relative h-9 w-12 shrink-0 overflow-hidden rounded-full border-2 border-dark/20 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]">
                         <span className="absolute inset-0">
                           <Flag />
                         </span>

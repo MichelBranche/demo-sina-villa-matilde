@@ -89,6 +89,12 @@
     color: var(--color-dark);
   }
 
+  /* Hide system cursor when custom cursor is active (desktop / fine pointer) */
+  html.has-custom-cursor,
+  html.has-custom-cursor * {
+    cursor: none !important;
+  }
+
   /* Custom scrollbar — Firefox */
   * {
     scrollbar-width: thin;
@@ -206,7 +212,7 @@
   }
 
   .text-hero-brand {
-    font-size: clamp(2.15rem, 11.5vw, 17rem);
+    font-size: clamp(2.15rem, 12.4vw, 17rem);
     line-height: 0.9;
     letter-spacing: -0.03em;
   }

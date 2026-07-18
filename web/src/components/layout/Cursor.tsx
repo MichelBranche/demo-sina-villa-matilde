@@ -25,6 +25,8 @@ export function Cursor() {
     const label = labelRef.current;
     if (!dot || !ring || !label) return;
 
+    document.documentElement.classList.add("has-custom-cursor");
+
     gsap.set([dot, ring], { xPercent: -50, yPercent: -50 });
     gsap.set(label, { opacity: 0, scale: 0.8 });
 
@@ -68,6 +70,7 @@ export function Cursor() {
     window.addEventListener("mousemove", move, { passive: true });
 
     return () => {
+      document.documentElement.classList.remove("has-custom-cursor");
       window.removeEventListener("mousemove", move);
     };
   }, [reducedMotion, finePointer]);
