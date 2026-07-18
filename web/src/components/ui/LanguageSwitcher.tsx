@@ -6,6 +6,10 @@ import { EASE } from "../../lib/motion";
 type LanguageSwitcherProps = {
   toneClass: string;
   className?: string;
+  /** Popup opens upward (useful near bottom of mobile menu) */
+  placement?: "bottom" | "top";
+  /** Border/popup colors for dark surfaces */
+  variant?: "default" | "onDark";
 };
 
 const FLAGS: Record<Locale, () => ReactElement> = {
@@ -94,12 +98,15 @@ function FlagZH() {
 export function LanguageSwitcher({
   toneClass,
   className = "",
+  placement = "bottom",
+  variant = "default",
 }: LanguageSwitcherProps) {
   const { locale, setLocale, t } = useLocale();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const popRef = useRef<HTMLDivElement>(null);
   const ActiveFlag = FLAGS[locale];
+  const onDark = variant === "onDark";
 
   useEffect(() => {
     if (!open) return;
@@ -121,9 +128,11 @@ export function LanguageSwitcher({
     const pop = popRef.current;
     if (!open || !pop) return;
 
+    const origin = placement === "top" ? "90% 100%" : "90% 0%";
+
     gsap.fromTo(
       pop,
-      { opacity: 0, y: -8, scale: 0.86, filter: "blur(6px)" },
+      { opacity: 0, y: placement === "top" ? 8 : -8, scale: 0.86, filter: "blur(6px)" },
       {
         opacity: 1,
         y: 0,
@@ -131,13 +140,13 @@ export function LanguageSwitcher({
         filter: "blur(0px)",
         duration: 0.42,
         ease: EASE.villaOut,
-        transformOrigin: "90% 0%",
+        transformOrigin: origin,
       },
     );
 
     gsap.fromTo(
       pop.querySelectorAll("[data-lang-option]"),
-      { opacity: 0, y: 8, scale: 0.9 },
+      { opacity: 0, y: placement === "top" ? -8 : 8, scale: 0.9 },
       {
         opacity: 1,
         y: 0,
@@ -148,7 +157,7 @@ export function LanguageSwitcher({
         ease: EASE.villaOut,
       },
     );
-  }, [open]);
+  }, [open, placement]);
 
   return (
     <div ref={rootRef} className={`relative ${className}`}>
@@ -171,12 +180,26 @@ export function LanguageSwitcher({
           ref={popRef}
           role="listbox"
           aria-label={t.nav.language}
-          className="absolute right-0 top-[calc(100%+0.75rem)] z-[60] will-change-transform"
+          className={`absolute right-0 z-[60] will-change-transform ${
+            placement === "top"
+              ? "bottom-[calc(100%+0.75rem)]"
+              : "top-[calc(100%+0.75rem)]"
+          }`}
         >
-          <div className="relative max-h-[min(70vh,28rem)] overflow-y-auto rounded-[1.35rem] border-2 border-dark/15 bg-cream px-3 py-3 shadow-[0_20px_50px_rgba(51,25,23,0.18)] [scrollbar-width:thin]">
+          <div
+            className={`relative max-h-[min(50vh,22rem)] overflow-y-auto rounded-[1.35rem] px-3 py-3 shadow-[0_20px_50px_rgba(51,25,23,0.18)] [scrollbar-width:thin] ${
+              onDark
+                ? "border-2 border-blush/25 bg-cream"
+                : "border-2 border-dark/15 bg-cream"
+            }`}
+          >
             <span
               aria-hidden
-              className="absolute -top-2 right-5 size-3.5 rotate-45 border-l-2 border-t-2 border-dark/15 bg-cream"
+              className={`absolute right-5 size-3.5 rotate-45 bg-cream ${
+                placement === "top"
+                  ? "-bottom-2 border-b-2 border-r-2"
+                  : "-top-2 border-l-2 border-t-2"
+              } ${onDark ? "border-blush/25" : "border-dark/15"}`}
             />
             <ul className="relative flex flex-col gap-1.5">
               {LOCALES.map((code) => {

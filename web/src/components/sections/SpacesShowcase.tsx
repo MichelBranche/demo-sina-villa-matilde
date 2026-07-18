@@ -72,7 +72,7 @@ export function SpacesShowcase() {
     <section id="spazi" ref={sectionRef} data-nav-tone="dark">
       <div
         data-page-builder-section="headlineSection"
-        className="spaces-headline theme-secondary section-px relative isolate overflow-hidden py-24 lg:py-56 lg:pb-44"
+        className="spaces-headline theme-secondary section-px relative isolate overflow-hidden py-20 lg:py-56 lg:pb-44"
       >
         <div className="relative z-10 mx-auto flex max-w-[1054px] flex-col gap-16 lg:gap-24">
           <p className="text-center font-sans text-body-30 uppercase">
@@ -110,12 +110,12 @@ export function SpacesShowcase() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/10 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
             </div>
-            <div className="absolute inset-x-0 bottom-0 p-4 lg:p-6">
-              <h3 className="font-noe-text text-base uppercase leading-tight text-cream lg:text-lg">
+            <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4 lg:p-6">
+              <h3 className="font-noe-text text-[0.8rem] uppercase leading-tight text-cream sm:text-base lg:text-lg">
                 {space.title}
               </h3>
               <p
-                className="space-coords mt-1 font-sans text-xs text-cream/70"
+                className="space-coords mt-1 font-sans text-[0.65rem] text-cream/70 sm:text-xs"
                 data-coords={space.coords}
               >
                 {space.coords}

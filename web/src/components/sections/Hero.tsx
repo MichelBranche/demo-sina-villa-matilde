@@ -128,7 +128,7 @@ export function Hero() {
 
   return (
     <section ref={sectionRef} className="relative isolate bg-cream" data-nav-tone="dark">
-      <div className="hero-copy section-px flex flex-col pt-32 pb-8 lg:pt-40 lg:pb-10">
+      <div className="hero-copy section-px flex flex-col pt-28 pb-6 sm:pt-32 sm:pb-8 lg:pt-40 lg:pb-10">
         <span className="hero-chain mb-4 flex items-center gap-3 font-sans text-body-30 uppercase tracking-[0.35em] text-dark/55 lg:mb-6">
           <span>
             {hero.chain}
@@ -141,7 +141,9 @@ export function Hero() {
           style={{ perspective: "800px" }}
         >
           <span className="block overflow-hidden">
-            <span className="hero-brand-line block whitespace-nowrap">{hero.brand}</span>
+            <span className="hero-brand-line block whitespace-normal sm:whitespace-nowrap">
+              {hero.brand}
+            </span>
           </span>
         </h1>
 
@@ -158,7 +160,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative isolate h-[80svh] lg:h-svh" data-hero-media data-nav-tone="light">
+      <div className="relative isolate h-[72svh] min-h-[22rem] sm:h-[80svh] lg:h-svh" data-hero-media data-nav-tone="light">
         <div className="absolute inset-0">
           <div className="hero-media-reveal relative size-full overflow-hidden">
             <div className="hero-media-inner absolute top-1/2 left-1/2 h-[109.5%] w-[109.5%] -translate-x-1/2 -translate-y-1/2">

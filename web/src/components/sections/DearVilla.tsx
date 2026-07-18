@@ -45,7 +45,7 @@ export function DearVilla() {
 
   return (
     <section id="vivere" ref={sectionRef} data-nav-tone="light">
-      <div className="dear-hero theme-primary section-px relative isolate overflow-hidden py-24 pb-40 lg:py-56 lg:pb-64">
+      <div className="dear-hero theme-primary section-px relative isolate overflow-hidden py-20 pb-32 lg:py-56 lg:pb-64">
         <div className="relative z-10 mx-auto flex max-w-[1054px] flex-col items-center gap-8 text-center lg:gap-12">
           <p className="font-sans text-body-30 uppercase text-blush">
             <span className="block overflow-hidden">

@@ -117,7 +117,7 @@ export function Footer() {
       <div>
         <p
           ref={brandRef}
-          className="font-noe-text text-[clamp(2.5rem,8vw,7rem)] uppercase leading-[0.9] tracking-[-0.03em] text-blush"
+          className="font-noe-text text-[clamp(2rem,9vw,7rem)] uppercase leading-[0.9] tracking-[-0.03em] text-blush"
           style={{ perspective: "600px" }}
         >
           <span className="mr-3 align-top font-sans text-[0.22em] tracking-[0.28em] text-blush/55">

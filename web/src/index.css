@@ -144,11 +144,11 @@
 
   /* Consistent section rhythm */
   .section-px {
-    padding-inline: clamp(1.5rem, 4vw, 4rem);
+    padding-inline: clamp(1.15rem, 4vw, 4rem);
   }
 
   .section-py {
-    padding-block: clamp(5rem, 9vw, 8.5rem);
+    padding-block: clamp(4rem, 9vw, 8.5rem);
   }
 
   /* Robust nav legibility over any background */
@@ -206,13 +206,13 @@
   }
 
   .text-hero-brand {
-    font-size: clamp(2.75rem, 12.4vw, 17rem);
+    font-size: clamp(2.15rem, 11.5vw, 17rem);
     line-height: 0.9;
     letter-spacing: -0.03em;
   }
 
   .text-title-marquee {
-    font-size: clamp(7rem, 22vw, 16rem);
+    font-size: clamp(4.5rem, 22vw, 16rem);
     line-height: 0.85;
     letter-spacing: -0.02em;
   }
