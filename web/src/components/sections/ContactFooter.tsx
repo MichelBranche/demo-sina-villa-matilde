@@ -111,26 +111,26 @@ export function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="theme-primary sticky bottom-0 z-0 flex flex-col gap-8 p-6 lg:gap-10 lg:p-8"
+      className="theme-primary relative z-0 flex flex-col gap-6 p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:gap-8 sm:p-6 lg:sticky lg:bottom-0 lg:gap-10 lg:p-8 lg:pb-8"
       data-nav-tone="light"
     >
       <div>
         <p
           ref={brandRef}
-          className="font-noe-text text-[clamp(2rem,9vw,7rem)] uppercase leading-[0.9] tracking-[-0.03em] text-blush"
+          className="font-noe-text text-[clamp(1.85rem,10vw,7rem)] uppercase leading-[0.9] tracking-[-0.03em] text-blush"
           style={{ perspective: "600px" }}
         >
-          <span className="mr-3 align-top font-sans text-[0.22em] tracking-[0.28em] text-blush/55">
+          <span className="mb-1 block font-sans text-[0.55rem] tracking-[0.28em] text-blush/55 sm:mb-0 sm:mr-3 sm:inline sm:align-top sm:text-[0.22em]">
             {footer.chain}
             <sup className="ml-0.5 text-[0.7em] tracking-normal">®</sup>
           </span>
           <span className="footer-brand-text">{footer.brand}</span>
         </p>
 
-        <div className="grid grid-cols-1 gap-x-10 pt-8 lg:grid-cols-2 lg:pt-12">
-          <div className="mb-8 grid grid-cols-2 gap-6 lg:mb-0 lg:gap-10">
+        <div className="grid grid-cols-1 gap-x-10 pt-6 sm:pt-8 lg:grid-cols-2 lg:pt-12">
+          <div className="mb-6 grid grid-cols-2 gap-4 sm:mb-8 sm:gap-6 lg:mb-0 lg:gap-10">
             {footer.columns.map((column, i) => (
-              <div key={i} className="flex flex-col items-start gap-3 lg:gap-4">
+              <div key={i} className="flex flex-col items-start gap-2.5 sm:gap-3 lg:gap-4">
                 {column.map((link) => (
                   <a
                     key={link.label}
@@ -147,7 +147,7 @@ export function Footer() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 gap-8 border-t border-current/30 pt-8 lg:grid-cols-2 lg:gap-10 lg:border-t-0 lg:pt-0">
+          <div className="grid grid-cols-1 gap-6 border-t border-current/30 pt-6 sm:gap-8 sm:pt-8 lg:grid-cols-2 lg:gap-10 lg:border-t-0 lg:pt-0">
             <div className="flex flex-col gap-1 font-sans text-body-30 text-blush">
               <div className="flex items-center gap-2">
                 <InstagramIcon />
@@ -177,7 +177,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-x-10 gap-y-8 border-t border-current/30 pt-8 lg:grid-cols-2 lg:pt-10">
+      <div className="grid grid-cols-1 gap-x-10 gap-y-6 border-t border-current/30 pt-6 sm:gap-y-8 sm:pt-8 lg:grid-cols-2 lg:pt-10">
         <address className="flex flex-col items-start gap-2 not-italic font-sans text-body-30 text-blush">
           <p className="whitespace-pre-line">
             {contact.address}
@@ -205,8 +205,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-2xl">
-        <div className="h-36 w-full sm:h-40 lg:h-44">
+      <div className="overflow-hidden rounded-xl sm:rounded-2xl">
+        <div className="h-32 w-full sm:h-40 lg:h-44">
           <iframe
             title="Sina Villa Matilde — Google Maps"
             src={`https://www.google.com/maps?q=${contact.coordinates.lat},${contact.coordinates.lng}&z=16&hl=${locale}&output=embed`}
@@ -218,8 +218,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 border-t border-current/30 pt-5 lg:flex-row lg:items-center lg:justify-between lg:pt-0">
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-sans text-[0.75rem] uppercase tracking-wide text-blush">
+      <div className="flex flex-col gap-4 border-t border-current/30 pt-4 sm:gap-5 sm:pt-5 lg:flex-row lg:items-center lg:justify-between lg:pt-0">
+        <div className="flex flex-col gap-1 font-sans text-[0.7rem] uppercase tracking-wide text-blush sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-2 sm:text-[0.75rem]">
           <p>
             © {footer.chain} {footer.brand} {year}
           </p>
@@ -230,7 +230,7 @@ export function Footer() {
         <a
           ref={privacyRef}
           href={footer.privacyHref}
-          className="group relative inline-flex shrink-0 items-center overflow-hidden bg-blush px-4 py-2 font-sans text-[0.8rem] text-dark transition-colors duration-[400ms] lg:px-6"
+          className="group relative inline-flex w-fit shrink-0 items-center overflow-hidden bg-blush px-4 py-2.5 font-sans text-[0.8rem] text-dark transition-colors duration-[400ms] lg:px-6"
         >
           <span
             className="absolute inset-0 z-0 translate-y-full bg-cream transition-transform duration-[400ms] ease-in-out group-hover:translate-y-0"
@@ -240,7 +240,7 @@ export function Footer() {
         </a>
       </div>
 
-      <p className="font-sans text-[0.75rem] uppercase tracking-wide text-blush/60">
+      <p className="font-sans text-[0.7rem] uppercase tracking-wide text-blush/60 sm:text-[0.75rem]">
         {footer.designBy}{" "}
         <a
           href="https://www.michelbranche.it"
