@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { PageTransitionProvider } from "./components/layout/PageTransition";
 import { LocaleProvider } from "./i18n/locale";
 import { HomePage } from "./pages/HomePage";
@@ -15,6 +16,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </PageTransitionProvider>
+        <Analytics />
       </BrowserRouter>
     </LocaleProvider>
   );
